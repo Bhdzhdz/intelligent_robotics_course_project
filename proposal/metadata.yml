@@ -1,0 +1,14 @@
+---
+title: "Mapping simple environment with a robot"
+subtitle: "Intelligent Robotics"
+date: \today
+author: "Hernandez Hernandez, Bernardo"
+tags: [robotics, mapping]
+bibliography: bibliography.bib
+lang: en-US 
+numbersections: true
+classoption:
+- twocolumn
+aspectratio: 169
+theme: metropolis
+...
