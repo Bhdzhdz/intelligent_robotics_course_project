@@ -15,7 +15,7 @@ The environment that the robot must map consists of a 3x3 meter space with box-l
 
 The proposed robot is a Roomba Create, that will be assisted by a computer vision system.
 
-![Robot](https://assets.rbl.ms/25583866/origin.jpg)
+![Roomba Create, image retrieved from [@ackerman-2021]](https://assets.rbl.ms/25583866/origin.jpg)
 
 ## Sensors
 
@@ -37,9 +37,9 @@ The Roomba robot possesses a motor and a pair of wheels, that let it move trough
 
 So far we have identified the following behaviors:
 
-    * Wander: The robot will move randomly in the environment.
-    * Avoid Obstacles: The robot will avoid obstacles in the environment to prevent it from crashing.
-    * Explore: The robot will try to determine wich area of the environment is yet to be explored and then move to it.
+* Wander: The robot will move randomly in the environment.
+* Avoid Obstacles: The robot will avoid obstacles in the environment to prevent it from crashing.
+* Explore: The robot will try to determine wich area of the environment is yet to be explored and then move to it.
 
 ## Architecture
 
@@ -49,7 +49,8 @@ So far we have identified the following behaviors:
 
 Some of the problems that could be run into while developing this project are:
 
-    * Is not possible to integrate correctly the ROS system with the robot.
-    * It is not possible to integrate the robot with the computer vision system.
-    * The robot computer vision system or alternative the infrared sensors, can't provide enough information to the robot to create the map of the environment.
+* Is not possible to integrate correctly the ROS system with the robot.
+* It is not possible to integrate the robot with the computer vision system.
+* The robot computer vision system or alternative the infrared sensors, can't provide enough information to the robot to create the map of the environment.
 
+# References
