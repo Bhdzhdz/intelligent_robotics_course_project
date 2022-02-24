@@ -43,7 +43,7 @@ So far we have identified the following behaviors:
 
 ## Architecture
 
-
+![Architecture](./images/architecture.png)
 
 # Possible problems
 
