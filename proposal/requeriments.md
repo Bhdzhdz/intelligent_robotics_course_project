@@ -1,7 +1,6 @@
 * Name of the project
 * Task description: Describe what is the task your robot is going to solve.
-* Environment description: Describe the environment where your robot is going to be situated. This must include all types of obstacles or features within the environment. Add
-an image (drawn by hand or in the computer) of the environment.
+* Environment description: Describe the environment where your robot is going to be situated. This must include all types of obstacles or features within the environment. Add an image (drawn by hand or in the computer) of the environment.
 * Robot description: Describe the robot in terms of:
     * Robot: What robot are you planning to use (LEGO, Roomba, NAO)?
     * Sensors: What type of sensors are you planning to use and what for? (depending on the robot you choose)
