@@ -1,7 +1,8 @@
 # Contents:
 
-- [Infrared\#1](#infrared1)
-- [Motors\#1](#motors1)
+- [Infrared1](#infrared1)
+- [Infrared2](#infrared2)
+- [Motors1](#motors1)
 
 # Infrared1
 
@@ -125,11 +126,11 @@ We expect that error increases with the distance, and it to be around
 
 # Motors1
 
-## Wheel motors test
+## Forward wheel motors test
 
 ### Goal
 
-Test the motors of the Roomba, and see if they are working properly.
+Test the motors of the Roomba, and see if they are working properly for moving tasks.
 This is necessary to command and track movement.
 
 ### Setup
@@ -152,3 +153,16 @@ deviation](images/roomba_motors_1.png)
 
 We are expecting that the Roomba to move forward without deviation for
 each distance. The error should be around 5%.
+
+
+# Motors2
+
+## Rotate wheel motors test
+
+### Goal
+
+Test the motors of the Roomba, and see if they are working properly for rotating tasks.
+This is necessary to command and track movement.
+
+### Setup
+
