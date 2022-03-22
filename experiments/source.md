@@ -191,3 +191,24 @@ We will repeat the experiment three times for each distance. We will take the me
 We are expecting that the Roomba to move forward without deviation for each distance. The error should be around 5%.
 
 
+# Motors2
+
+## Rotate wheel motors test
+
+### Goal
+
+Test the motors of the Roomba, and see if they are working properly for rotating tasks.
+This is necessary to command and track movement.
+
+### Setup
+
+We will make the Roomba rotate different degrees, and for each of them measure the error.
+
+The Roomba will rotate for the following degrees: 45, 90, 180.
+
+We will repeat the experiment three times for each degree and calculate the mean of the three measurements to calculate the error.
+
+### Expected Results
+
+We are expecting that the Roomba to rotate without deviation for each degree. The error should be around 5%.
+
