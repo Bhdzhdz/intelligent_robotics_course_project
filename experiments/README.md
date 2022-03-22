@@ -166,3 +166,13 @@ This is necessary to command and track movement.
 
 ### Setup
 
+We will make the Roomba rotate different degrees, and for each of them measure the error.
+
+The Roomba will rotate for the following degrees: 45, 90, 180.
+
+We will repeat the experiment three times for each degree and calculate the mean of the three measurements to calculate the error.
+
+### Expected Results
+
+We are expecting that the Roomba to rotate without deviation for each degree. The error should be around 5%.
+
