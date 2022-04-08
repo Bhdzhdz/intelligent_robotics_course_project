@@ -1,0 +1,24 @@
+---
+# Front page: Your full name and student’s ID (clave única), course’s name (Intelligent
+# Robotics), name of your project, professor’s name (my name is on the top of this
+# document). If you add the name of the school, make sure it is correctly written (School of
+# Engineering, Computer Science Department)
+
+author: 
+- Bernardo Hernandez Hernandez, 294561
+- "Professor: José Ignacio Núñez Varela"
+- Autonomous University of San Luis Potosí
+- School of Engineering, Computer Science Department
+
+subtitle: Intelligent Robotics
+title: PLACEHOLDER
+
+header-includes: |
+    \providecommand{\institute}[1]{
+    \postauthor{\end{tabular}\[0.5cm]\textit{#1}\end{center}}
+    }
+  
+include-before:
+- '`\newpage{}`{=latex}'
+...
+
