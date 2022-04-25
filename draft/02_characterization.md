@@ -26,6 +26,16 @@ The environment that the robot must map consists of a 3x3 meter space with box-l
 
 ## Robot description
 
+### Sensors
+
+The robot will have a camera that will be used to detect the obstacles in the environment and the creation of the map of the environment.
+
+Alternatively, the robot could use some other kind of sensors to detect the obstacles in the environment, like infrared sensors and bumpers integrated in the robot.
+
+### Actuators
+
+The robot won't need to grasp any objects, the only interaction with the environment will navigation trough the environment.
+
 
 
 `\pagebreak`{=latex}

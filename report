@@ -1,0 +1,166 @@
+<!--  Introduction: This section must contain the following subsections, and it should be around
+1 to 2 pages long:
+a. Problem description: General explanation of the problem to be solved.
+b. Goal: Definition of the project’s goal. -->
+<h1 id="introduction">Introduction</h1>
+<h2 id="problem-description">Problem description</h2>
+<p>The task is to create a 3D map of a simple environment using a mobile
+robot and computer vision techniques. To do this, the robot will need to
+navigate through the environment, avoid obstacles, decide which area of
+the environment is yet to be explored and then move to it.</p>
+<h2 id="goal">Goal</h2>
+<p>The project aims to develop a proof of concept of what could be done
+with a mobile robot and computer vision techniques, as well as create a
+workflow to ease the creation of future similar projects of the students
+of the Computer Science Department of the Autonomous University of San
+Luis Potosí.</p>
+<p></p>
+<!-- Project characterization: This section must contain the following subsections, and it
+should be around 5 to 10 pages long:
+    a. Task description
+    b. Environment description, add images or figures with the measurements and specific characteristics of your environment. Whatever objects, obstacles, etc., you will use must be described.
+    c. Robot description
+        i. Sensors: Describe which sensors will be used and add the experiments performed for each sensor, explain these experiments and the results found.
+        ii. Actuators: Describe which actuators will be used and add the experiments performed for each of them, explain these experiments and the results found. -->
+<h1 id="project-characterization">Project characterization</h1>
+<h2 id="task-description">Task description</h2>
+<p>The robot will need to navigate through the environment, avoid
+obstacles, decide which area of the environment is yet to be explored
+and then move to it. Using a Kinect, the robot will be able to detect
+the presence of obstacles and walls, saving the information to create a
+map of the environment. The robot will stop the exploration when it as
+no way to move towards the unexplored area, this could be because the
+robot has mapped the whole environment or because there is no way to
+move path wide enough to reach the unexplored area.</p>
+<h2 id="environment-description">Environment description</h2>
+<p>The environment that the robot must map consists of a 3x3 meter space
+with box-like obstacles.</p>
+<ul>
+<li><p>Wall: A wall is a rectangular area of the environment that is not
+traversable, it defines the boundaries of 3x3 meter space. To create a
+wall we will use the plywood sheet available in the lab or the cardboard
+boxes we can gather. The approximate dimensions of the walls should be
+3mx1mx1cm.</p></li>
+<li><p>Obstacle: An obstacle is a rectangular area of the environment
+that is not traversable, To create an obstacle we will use the cardboard
+boxes we can gather. All three dimensions of the obstacles should be
+between 20 cm and 40 cm.</p></li>
+</ul>
+<figure>
+<img src="images/enviroment.png" class="center" alt="Environment" />
+<figcaption aria-hidden="true">Environment</figcaption>
+</figure>
+<h2 id="robot-description">Robot description</h2>
+<h3 id="sensors">Sensors</h3>
+<p>The robot will have a camera that will be used to detect the
+obstacles in the environment and the creation of the map of the
+environment.</p>
+<p>Alternatively, the robot could use some other kind of sensors to
+detect the obstacles in the environment, like infrared sensors and
+bumpers integrated in the robot.</p>
+<h3 id="actuators">Actuators</h3>
+<p>The robot won’t need to grasp any objects, the only interaction with
+the environment will navigation trough the environment.</p>
+<p></p>
+<!-- Robot Architecture: This section must contain the following subsections, and it should be
+around 2 to 5 pages long:
+a. Architecture: Diagram or image where the architecture is shown, and the explanation of such architecture.
+b. Behaviors: List of all behaviors to be used and their explanation -->
+<figure>
+<img src="../images/architecture.png" class="center"
+alt="Robot Architecture" />
+<figcaption aria-hidden="true">Robot Architecture</figcaption>
+</figure>
+<ul>
+<li><p>Collide: Receives a collision message from the Roomba bumper
+sensor, and sends a message to the Robot to stop moving.</p></li>
+<li><p>Feel force: Receives a force message from the Roomba’s infrared
+sensors and the Kinect’s depth sensor, using this info the Roomba will
+detect what direction will get it away from the walls.</p></li>
+<li><p>Avoid: Determine if a wall is too close. Uses the map and
+environment information.</p></li>
+<li><p>Wall/obstacle detection: Using the cloud point generate planes to
+represent walls and obstacles.</p></li>
+<li><p>Map update: Add new detected wall and obstacles to the 3D
+map.</p></li>
+<li><p>Virtual position correction: Using odometry techniques and
+landmarks gathered from the camera, correct the virtual position to
+better represent the real position of the robot.</p></li>
+<li><p>Find path to unexplored: Find the closest unexplored reachable
+position.</p></li>
+<li><p>Direct towards unexplored: Calculate the necessary moves to the
+reach the next position to explore.</p></li>
+<li><p>Calculate safe direction: Using the info from the “Direct towards
+unexplored” and “Avoid” modules determine the value the motors need to
+have.</p></li>
+</ul>
+<p></p>
+<!-- Experiments and Results: This section should contain a description of the experiments
+and results of the robot trying to solve the task, along with the problems found so far. This
+section is part of the ongoing work you are doing, so it might be not finished completely. -->
+<h2 id="linear-movement">Linear Movement</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Prediction (cm)</th>
+<th>Real (cm)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10</td>
+<td>09.9</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>10.4</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>10.3</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>20.2</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>20.4</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>20.5</td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>50.4</td>
+</tr>
+<tr class="even">
+<td>50</td>
+<td>50.1</td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>50.2</td>
+</tr>
+<tr class="even">
+<td>100</td>
+<td>100.1</td>
+</tr>
+<tr class="odd">
+<td>100</td>
+<td>100.3</td>
+</tr>
+<tr class="even">
+<td>100</td>
+<td>100.4</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../images/linear_movement_on_centimeters.png" /></p>
+<p><img src="../images/linear_movement_on_centimeters_error.png" /></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>There is only a small error, and it is somewhat constant among all
+distances, this is error is probably caused from a combination of the
+start and stop of the movement form the motors and human error during
+the measurent.</p>
