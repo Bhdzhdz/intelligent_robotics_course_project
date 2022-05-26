@@ -7,20 +7,20 @@ section is part of the ongoing work you are doing, so it might be not finished c
 
 Using the move interface we developed
 
-| Prediction (cm)|Real (cm)|
-| ---------|---- |
-| 10|09.9         |
-| 10|10.4         |
-| 10|10.3         |
-| 20|20.2         |
-| 20|20.4         |
-| 20|20.5         |
-| 50|50.4         |
-| 50|50.1         |
-| 50|50.2         |
-| 100|100.1       |
-| 100|100.3       |
-| 100|100.4       |
+| Prediction (cm) | Real (cm) |
+| --------------- | --------- |
+| 10              | 09.9      |
+| 10              | 10.4      |
+| 10              | 10.3      |
+| 20              | 20.2      |
+| 20              | 20.4      |
+| 20              | 20.5      |
+| 50              | 50.4      |
+| 50              | 50.1      |
+| 50              | 50.2      |
+| 100             | 100.1     |
+| 100             | 100.3     |
+| 100             | 100.4     |
 
 
 ![](images/linear_movement_on_centimeters.png)

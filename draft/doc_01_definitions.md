@@ -1,6 +1,6 @@
 # Move module
 
-```python2
+```python
 
 def set_speed(linear, angular, duration):
 
